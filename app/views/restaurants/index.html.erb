@@ -7,11 +7,12 @@
 
 <% @restaurants.each do |restaurant| %>
 	<div class="container" style="margin: 0">
+		<p style="padding: -15px">
     <h3><%= restaurant.name %></h3>
     <p><strong>Address:</strong> <%= restaurant.address %></p>
     <p><strong>Phone Number:</strong> <%= restaurant.phone_number %></p>
     <h4><%= restaurant.category %></h4>
-		<h6><%= link_to "See Restaurants", restaurant_path(restaurant)%></h6>
+		<h6><%= link_to "See More", restaurant_path(restaurant)%></h6>
     <hr>
 	</div>
 <% end %>
